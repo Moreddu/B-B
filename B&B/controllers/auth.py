@@ -7,14 +7,13 @@ import os
 
 #os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
-client_secret_path = "C:\Users\Ray\PycharmProjects\corso-cloud-bedb\controllers\client_secret.json"
+client_secret_path = "D:\ProgettoB&B\B&B\controllers\client_secret.json"
 
 class GoogleLogin():
     def __init__(self):
         self.flow = client.flow_from_clientsecrets(
             client_secret_path,
-            scope='https://www.googleapis.com/auth/userinfo.email',
-            redirect_uri='http://127.0.0.1:5000/google')
+            scope='https://www.googleapis.com/auth/userinfo.email')
 
     def step1(self):
         self.auth_uri = self.flow.step1_get_authorize_url()

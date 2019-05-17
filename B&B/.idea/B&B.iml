@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="google-appengine-python" name="Google App Engine (Python)">
       <configuration>
-        <option name="rootFolder" value="D:\Progetto B&amp;B\B&amp;B" />
+        <option name="rootFolder" value="D:\ProgettoB&amp;B\B&amp;B" />
         <option name="sdkFolder" value="C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine" />
       </configuration>
     </facet>
@@ -13,7 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7 (B&amp;B)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (B&amp;B) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Google App Engine SDK" level="project" />
   </component>
