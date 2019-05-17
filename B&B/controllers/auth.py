@@ -7,14 +7,14 @@ import os
 
 #os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
-client_secret_path = "D:\ProgettoB&B\B&B\controllers\client_secret.json"
+client_secret_path = r"controllers/client_secret.json"
 
 class GoogleLogin():
     def __init__(self):
         self.flow = client.flow_from_clientsecrets(
             client_secret_path,
             scope='https://www.googleapis.com/auth/userinfo.email',
-            redirect_uri='http://fast-lysis-iot-4.appspot.com/')
+            redirect_uri='http://fast-lysis-iot-4.appspot.com/authorization')
 
     def step1(self):
         self.auth_uri = self.flow.step1_get_authorize_url()
