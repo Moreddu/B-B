@@ -13,7 +13,8 @@ class GoogleLogin():
     def __init__(self):
         self.flow = client.flow_from_clientsecrets(
             client_secret_path,
-            scope='https://www.googleapis.com/auth/userinfo.email')
+            scope='https://www.googleapis.com/auth/userinfo.email',
+            redirect_uri='http://fast-lysis-iot-4.appspot.com/')
 
     def step1(self):
         self.auth_uri = self.flow.step1_get_authorize_url()
